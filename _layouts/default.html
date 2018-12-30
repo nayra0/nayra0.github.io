@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			{% if page.title != 'Home' %}
+				<title>{{ page.title }}</title>
+			{% else %}
+				<title>{{ site.title }}</title>
+			{% endif %}
+			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+		</head>
+		<body>
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+					<li><a href="/career">Career</a></li>
+					<li><a href="/education">Education</a></li>
+					<li><a href="/skills">Skills</a></li>
+	        		<li><a href="/blog">Blog</a></li>
+	    		</ul>
+			</nav>
+			
+			<div class="container">
+			
+			{{ content }}
+			
+			</div>
+			<footer>
+	    		<ul>
+	        		<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+	        		<li><a href="http://github.com/{{site.github_username}}">github.com/{{site.github_username}}</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
