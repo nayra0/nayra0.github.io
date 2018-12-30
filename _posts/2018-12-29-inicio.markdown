@@ -2,17 +2,13 @@
 layout: post
 title:  "Início"
 date:   2018-12-29 22:25:00 -0300
-categories: papo
+categories: [papo]
 author: "Nayra Oliveira"
+tags: [me, blog]
+
 ---
 Assim como tudo isso será difícil. 
 Não tenho costume de escrever, mas este será meu cantinho para compartilhar opiniões, estudo e qualquer outra coisa que eu achar interessante :)
 
 Talvez se torne uma bagunça? Sim. Mas tentarei deixar organizado por temas.
-
-
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
 

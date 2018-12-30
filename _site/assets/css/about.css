@@ -1,0 +1,40 @@
+.container-about{
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    text-align: center;
+    padding-top: 10px;
+ }
+ 
+ .img-circle {
+    border-radius: 50%;
+ }
+ 
+ .list-inline{
+    margin-left: -0em !important;
+ }
+ 
+ .list-inline a{
+    text-decoration: none;
+ }
+ 
+ .list-inline i{
+    background: #3385FF;
+    color: #fff;
+    padding: 4px 8px;
+    height: 16px;
+    width: 16px;
+    display: block;
+    border-radius: 50px;
+ }
+ 
+ .list-inline > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+ }
+ 
+ .container-about p{
+    font-size: 15px;
+    color: #666;
+    text-align: left !important;
+ }

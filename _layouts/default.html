@@ -6,19 +6,65 @@
 			{% else %}
 				<title>{{ site.title }}</title>
 			{% endif %}
+
+			<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+			<link rel="stylesheet" type="text/css" href="/assets/css/menu.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-					<li><a href="/career">Career</a></li>
-					<li><a href="/education">Education</a></li>
-					<li><a href="/skills">Skills</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
+			<div class="top">
+				<div class="title-site">
+					<h1>{{site.title}}</h1>
+				</div>
+				<div class="menu-site">
+					<nav class="menu">
+						<ul>
+							<li class="menu-item">	
+								{% if page.title == 'Home' %}
+									<a class="menu-item-selected" href="/">Home</a>
+								{% else %}
+									<a href="/">Home</a>
+								{% endif %}
+							</li>
+							<li class="menu-item">
+								{% if page.title == 'About' %}
+									<a class="menu-item-selected" href="/about">About</a>
+								{% else %}
+									<a href="/about">About</a>
+								{% endif %}
+							</li>
+							<li class="menu-item">	
+								{% if page.title == 'Career' %}
+									<a class="menu-item-selected" href="/career">Career</a>
+								{% else %}
+									<a href="/career">Career</a>
+								{% endif %}
+							</li>
+							<li class="menu-item">
+								{% if page.title == 'Education' %}
+									<a class="menu-item-selected" href="/education">Education</a>
+								{% else %}
+									<a href="/education">Education</a>
+								{% endif %}				
+							</li>
+							<!-- <li class="menu-item">
+								{% if page.title == 'Skills' %}
+									<a class="menu-item-selected" href="/skills">Skills</a>
+								{% else %}
+									<a href="/skills">Skills</a>
+								{% endif %}			
+							</li> -->
+							<li class="menu-item">
+								{% if page.title == 'Blog' %}
+									<a class="menu-item-selected" href="/blog">Blog</a>
+								{% else %}
+									<a href="/blog">Blog</a>
+								{% endif %}	
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
 			
 			<div class="container">
 			
